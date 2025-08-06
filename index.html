@@ -1,0 +1,252 @@
+
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- font awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+</head>
+
+<body class="">
+    <header class="bg-white shadow-sm">
+        <div class="container mx-auto px-4 py-8 flex items-center justify-between ">
+            <!-- Navigation Menu -->
+            <nav class="hidden lg:flex items-center space-x-6 text-2xl gap-5 ">
+                <a href="#home" class="text-gray-800 font-small text-violet-600 border-b border-b-violet-600 p-4 border-b-4" >Link</a>
+                <a href="#" class="text-gray-800 font-small hover:text-violet-600 border-b hover:border-violet-600 border-b-4 p-4">Link</a>
+                <a href="#" class="text-gray-800 font-small hover:text-violet-600 border-b hover:border-violet-600 border-b-4 p-4">Link</a>
+            </nav>
+            <!-- Logo/Icon -->
+            <div class="flex items-center space-x-2">
+                <i class="fa-solid fa-chart-simple text-violet-600 text-4xl"></i>
+            </div>
+            <!-- Button group -->
+            <div class="flex items-center gap-4 relative">
+                <!-- search box -->
+                <input class="rounded-sm  hover:bg-gray-50 py-2 px-4 ps-10 text-2xl " type="search" placeholder="Search...">
+                <!-- search-icon  -->
+                <div class="absolute inset-y-0 left-0 lg:ps-3 flex items-center pointer-events-none ">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0,0,256,256">
+                        <g fill="#bbbbbb" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                            stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none"
+                            font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+                            <g transform="scale(5.12,5.12)">
+                                <path
+                                    d="M21,3c-9.4,0 -17,7.6 -17,17c0,9.4 7.6,17 17,17c3.35455,0 6.47104,-0.98016 9.10352,-2.65234l12.27539,12.27344l4.24219,-4.24219l-12.09766,-12.09961c2.17229,-2.8553 3.47656,-6.40865 3.47656,-10.2793c0,-9.4 -7.6,-17 -17,-17zM21,7c7.2,0 13,5.8 13,13c0,7.2 -5.8,13 -13,13c-7.2,0 -13,-5.8 -13,-13c0,-7.2 5.8,-13 13,-13z">
+                                </path>
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+                <!-- Login button  -->
+                <button class=" bg-violet-600 hover:bg-violet-500 text-white font-medium rounded-sm px-4 py-2 text-2xl">
+                Log in
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- hero section  -->
+    <section id="home" class=" grid lg:grid-cols-6 bg-gray-200 py-10">
+        <div class=" container col-span-4 col-start-2 mx-auto text-center py-10">
+            <h1 class="text-5xl lg:text-7xl font-extrabold text-gray-800">Lorem ipsum dolor
+                <br> amet <span  class="text-violet-600">consectetur 
+                <br>adipisicing</span> elit. 
+                <br> Ipsam!</h1>
+            <p class="md:px-30 py-10 text-xl font-small">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga veniam eveniet cumque vitae, placeat, ullam officia iure consectetur, labore </p>
+            <div class="space-x-8">
+                <button class="bg-violet-600 text-white rounded-sm px-4 py-2 font-bold">Get Started</button>
+                <button class="text-gray-800 font-bold hover:bg-violet-600 hover:rounded-sm hover:text-white hover:py-2 hover:px-4">Learn More</button>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- customers sections (card) -->
+    <section id="customers" class="bg-gray-50 py-12" >
+        <div class="mx-auto">
+            <h2 class="text-center text-2xl lg:text-4xl font-bold text-gray-800 text-center py-8">What our customers are saying about us  
+            </h2>
+            <div class="grid lg:grid-cols-7 gap-4 p-8">
+                <!-- Subgrid -->
+                <div class="lg:col-span-7 grid grid-cols-subgrid gap-4">
+                    <!-- Card 1: Started from the 2nd column -->
+                    <div class="col-span-2 col-start-2 bg-white shadow-lg rounded-xl text-center flex flex-col justify-between">
+                        <!-- card-body  -->
+                        <div class="flex flex-col justify-between py-4">
+                            <div class="flex justfy-start">
+                                <i class=" fa-solid fa-quote-left text-violet-600 text-3xl"></i>
+                            </div>
+                            <div class="flex justify-center items-center">
+                                <p class="text-gray-600 ">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus quibusdam, eligendi
+                                exercitationem molestias possimus facere.
+                                </p>
+                            </div>
+                            <div class="flex justify-end">
+                                <i class=" fa-solid fa-quote-right text-violet-600 text-3xl"></i>
+                            </div>
+                        </div>
+                        <!-- card-footer  -->
+                        <div class="bg-violet-600 w-full rounded-b-xl relative">
+                            <div class=" absolute left-1/2 -translate-x-1/2 top-[5%]">
+                                <i class="text-violet-900 text-3xl fa-solid fa-id-card-clip left-1/2 top-1/2 absolute -translate-x-1/2 -translate-y-1/2"></i>
+                            </div>
+                            <div class=" text-white my-2 mt-6 ">
+                                <h3 class="font-semibold">Distinctio Animi</h3>
+                                <p class="text-sm">ALIQUAM ILLUM</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: Started from the 5th column -->
+                    <div class="col-span-2 col-start-5 bg-white shadow-lg rounded-xl text-center flex flex-col justify-between">
+                        <!-- card-body  -->
+                        <div class="flex flex-col justify-between py-4">
+                            <div class="flex justfy-start">
+                                <i class=" fa-solid fa-quote-left text-violet-600 text-3xl"></i>
+                            </div>
+                            <div class="flex justify-center items-center">
+                                <p class="text-gray-600 ">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus quibusdam, eligendi
+                                exercitationem molestias possimus facere.
+                                </p>
+                            </div>
+                            <div class="flex justify-end">
+                                <i class=" fa-solid fa-quote-right text-violet-600 text-3xl"></i>
+                            </div>
+                        </div>
+                        <!-- card-footer  -->
+                        <div class="bg-violet-600 w-full rounded-b-xl relative">
+                            <div class=" absolute left-1/2 -translate-x-1/2 top-[5%]">
+                                <i class="text-violet-900 text-3xl fa-solid fa-id-card-clip left-1/2 top-1/2 absolute -translate-x-1/2 -translate-y-1/2"></i>
+                            </div>
+                            <div class=" text-white my-2 mt-6">
+                                <h3 class="font-semibold">Distinctio Animi</h3>
+                                <p class="text-sm">ALIQUAM ILLUM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="grid lg:grid-cols-7 gap-4 p-8">
+                <!-- Subgrid -->
+                <div class="lg:col-span-7 grid grid-cols-subgrid gap-4">
+                    <!-- Card 3: Started from the 2nd column -->
+                    <div class="col-span-2 col-start-2 bg-white shadow-lg rounded-xl text-center flex flex-col justify-between">
+                        <!-- card-body  -->
+                        <div class="flex flex-col justify-between py-4">
+                            <div class="flex justfy-start">
+                                <i class=" fa-solid fa-quote-left text-violet-600 text-3xl"></i>
+                            </div>
+                            <div class="flex justify-center items-center">
+                                <p class="text-gray-600 ">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus quibusdam, eligendi
+                                exercitationem molestias possimus facere.
+                                </p>
+                            </div>
+                            <div class="flex justify-end">
+                                <i class=" fa-solid fa-quote-right text-violet-600 text-3xl"></i>
+                            </div>
+                        </div>
+                        <!-- card-footer  -->
+                        <div class="bg-violet-600 w-full rounded-b-xl relative">
+                            <div class=" absolute left-1/2 -translate-x-1/2 top-[5%]">
+                                <i class="text-violet-900 text-3xl fa-solid fa-id-card-clip left-1/2 top-1/2 absolute -translate-x-1/2 -translate-y-1/2"></i>
+                            </div>
+                            <div class=" text-white my-2 mt-6">
+                                <h3 class="font-semibold ">Distinctio Animi</h3>
+                                <p class="text-sm">ALIQUAM ILLUM</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 4: Started from the 5th column -->
+                    <div class="col-span-2 col-start-5 bg-white shadow-lg rounded-xl text-center flex flex-col justify-between">
+                        <!-- card-body  -->
+                        <div class="flex flex-col justify-between py-4">
+                            <div class="flex justfy-start">
+                                <i class=" fa-solid fa-quote-left text-violet-600 text-3xl"></i>
+                            </div>
+                            <div class="flex justify-center items-center">
+                                <p class="text-gray-600 ">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus quibusdam, eligendi
+                                exercitationem molestias possimus facere.
+                                </p>
+                            </div>
+                            <div class="flex justify-end">
+                                <i class=" fa-solid fa-quote-right text-violet-600 text-3xl"></i>
+                            </div>
+                        </div>
+                        <!-- card-footer  -->
+                        <div class="bg-violet-600 w-full rounded-b-xl relative">
+                            <div class=" absolute left-1/2 -translate-x-1/2 top-[5%]">
+                                <i class="text-violet-900 text-3xl fa-solid fa-id-card-clip left-1/2 top-1/2 absolute -translate-x-1/2 -translate-y-1/2"></i>
+                            </div>
+                            <div class=" text-white my-2 mt-6">
+                                <h3 class="font-semibold">Distinctio Animi</h3>
+                                <p class="text-sm">ALIQUAM ILLUM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact section  -->
+    <section id="contact" class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-6 bg-gray-200">
+        <div class="container col-start-1 col-span-1 md:col-start-2 md:col-span-2 lg:col-start-3 col-span-2 my-20 bg-gray-50 rounded-xl shadow-lg">
+            <form action="" class=" m-20">
+                <h1 class="text-3xl font-bold text-gray-800">Contact us</h1>
+                <div class="w-full flex flex-col space-y-2 my-4">
+                    <label for="name" class="font-bold">Name</label>
+                    <input type="text" id="name" placeholder="Your Name" class="bg-gray-200 rounded-sm py-2 px-1 text-gray-800" required>
+                </div>
+                <div class="w-full flex flex-col space-y-2 my-4">
+                    <label for="email" class="font-bold">Email</label>
+                    <input type="email" id="email" placeholder="Your email" class="bg-gray-200 rounded-sm py-2 px-1 text-gray-800" required>
+                </div>
+                <div class="w-full flex flex-col space-y-2 my-4">
+                    <label for="message" class="font-bold">Message</label>
+                    <textarea id="message" rows="6" placeholder="Message..." class="bg-gray-200 rounded-sm py-2 px-1 text-gray-800" required></textarea>
+                </div>
+                <button class="w-full bg-violet-600 rounded-sm text-white hover:bg-violet-500 py-2">Send</button>
+            </form>
+        </div>
+    </section>
+    <!-- footer section  -->
+     <footer class=" bg-gray-200 flex justify-between p-8 text-gray-800">
+        <div class="flex text-sm lg:text-xl space-x-6 font-medium ">
+                <a class="" href="#">Shop</a>
+                <a class="" href="#">About</a>
+                <a class="" href="#">Blog</a>
+                <a class="" href="#">Pricing</a>
+        </div>
+         <div class="flex space-x-2 lg:space-x-6 text-sm lg:text-xl text-white">
+            <div class="bg-violet-600 rounded-full h-5 w-5 lg:w-10 lg:h-10 flex items-center justify-center">
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+            <div class="bg-violet-600 rounded-full h-5 w-5 lg:w-10 lg:h-10 flex items-center justify-center">
+                <i class="fa-brands fa-pinterest"></i>
+            </div>
+            <div class="bg-violet-600 rounded-full h-5 w-5 lg:w-10 lg:h-10 flex items-center justify-center">
+                <i class="fa-brands fa-twitter"></i>
+            </div>
+            <div class="bg-violet-600 rounded-full h-5 w-5 lg:w-10 lg:h-10 flex items-center justify-center">
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+            <div class="bg-violet-600 rounded-full h-5 w-5 lg:w-10 lg:h-10 flex items-center justify-center">
+                <i class="fa-brands fa-facebook"></i>
+            </div>
+            <div class="bg-violet-600 rounded-full h-5 w-5 lg:w-10 lg:h-10 flex items-center justify-center">
+                <i class="fa-brands fa-google"></i>
+            </div>
+        </div>
+     </footer>
+</body>
+</html>
